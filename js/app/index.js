@@ -1,9 +1,5 @@
 nie.define('index', function() {
-    var videoModule = nie.require("nie.util.videoV2"),
-        PopDialog = nie.require("nie.util.PopDialog"),
-        niedownload = nie.require("nie.util.niedownload"),
-        shareMoudel = nie.require("nie.util.shareV5"),
-        userAgent = navigator.userAgent,
+    var userAgent = navigator.userAgent,
         isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1,
         demo1,demo2;
     if (isIE) {
@@ -95,7 +91,7 @@ nie.define('index', function() {
         },
         init: function(){
             var that = this;  
-            that.shareFn();
+            // that.shareFn();
             that.bindFn();
             that.slide();
             that.piaoluo();
@@ -104,6 +100,3 @@ nie.define('index', function() {
     };
     fn.init();
 })
-nie.config.stats.clickStats = true;
-nie.config.stats.clickStatsPrecent = 1;
-nie.config.copyRight.setWhite();
