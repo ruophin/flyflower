@@ -1,0 +1,42 @@
+/*********** mixin function ***********/
+/**
+//如何声明
+.ani_name(@n:ani_name){
+    .keyframes(@n);
+    .-frames(@-...){        
+        0% {
+            .opacity(0);
+            @{-}transform: translate3d(0, 100%, 0);
+        }
+        100% {
+            @{-}transform:scale(1,1);
+            @{-}transform-origin:top;
+        }
+    }
+}
+
+//如何调用
+.ani_name();
+.animation(ani_name ease-out 0.4s 0.4s backwards);
+
+**/
+/**** DEMO
+.opacity(0.5);
+****/
+/**** DEMO
+.box-shadow(2px 2px 3px #aaaaaa);
+****/
+/**** DEMO
+.inline-block();
+****/
+/**** DEMO
+.background-rgba(rgba(255, 255, 255, 0.5));
+****/
+/**** DEMO
+.gradient(top,#f7e7b8,#b48605);
+****/
+/**** DEMO
+当第一个参数为top时，最后一个参数为高度，为了兼容ie低版本；
+当第一个参数为left时，最后一个参数为宽度；
+.gradient-opacity(top,rgba(255, 0, 0, 0),rgba(255, 0, 0, 0.5),60);
+****/
